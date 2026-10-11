@@ -1,0 +1,13 @@
+# Supabase local CLI config — linked to the EXISTING hosted project.
+# Do not create a second cloud project. Project ref is fixed below.
+
+project_id = "umewelsxflzklynuibbh"
+
+[api]
+enabled = true
+
+[db]
+major_version = 15
+
+[auth]
+enabled = true

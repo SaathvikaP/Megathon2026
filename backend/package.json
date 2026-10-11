@@ -1,0 +1,19 @@
+{
+  "name": "megathon2026-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Supabase backend: migrations (schema, RLS, RPCs, storage policies), seed content, database tests and tooling",
+  "scripts": {
+    "test": "node --test tests/content.test.mjs",
+    "test:db": "node scripts/run-db-tests.mjs",
+    "db:verify": "node scripts/verify-supabase.mjs",
+    "db:seed-sql": "node scripts/build-seed.mjs",
+    "db:types": "supabase gen types typescript --project-id umewelsxflzklynuibbh --schema public > ../frontend/src/lib/supabase/database.types.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

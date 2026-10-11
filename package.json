@@ -1,0 +1,26 @@
+{
+  "name": "megathon2026",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FinGuard — financial literacy learning platform for Indian Grade 11–12 students",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w frontend",
+    "lint": "npm run lint -w frontend",
+    "typecheck": "npm run typecheck -w frontend",
+    "test": "npm run test -w frontend && npm run test -w backend",
+    "test:offline": "npm run test:offline -w frontend && npm run test -w backend",
+    "test:db": "npm run test:db -w backend",
+    "db:verify": "npm run db:verify -w backend",
+    "db:seed-sql": "npm run db:seed-sql -w backend",
+    "db:types": "npm run db:types -w backend"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

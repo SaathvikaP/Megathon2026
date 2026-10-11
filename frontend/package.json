@@ -1,0 +1,41 @@
+{
+  "name": "megathon2026-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FinGuard web app (Next.js App Router, server actions, Supabase SSR auth)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:offline": "node --no-warnings --import ./tests/_offline/register.mjs --test tests/unit/urls.test.ts tests/unit/file-validation.test.ts tests/unit/comics.test.ts tests/unit/errors-and-scoring.test.ts tests/unit/content-compat.test.ts tests/unit/home-route.test.ts tests/unit/ai-request.test.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "next": "^15.5.27",
+    "react": "^19.1.9",
+    "react-dom": "^19.1.9",
+    "server-only": "^0.0.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.27",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
